@@ -2,10 +2,10 @@
 <p>Find me in app/views/students/index.html.erb</p> -->
 
 <h1>Student Details</h1>
-<% @students.each do |job| %>
+<% @students.each do |student| %>
   <div class="job">
-    <h2><%= link_to student.name, student.age %></h2>
+    <p><%= student.name%></p>
+    <p><%= student.age%></p>
     <p><%= student.lastname %></p>
   </div>
 <% end %>
-<p><%= link_to "submit", root_path %></p>
